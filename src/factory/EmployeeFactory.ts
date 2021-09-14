@@ -1,7 +1,7 @@
-import { DatabaseEngineer } from "../entities/DatabaseEngineer";
-import { EmployeeRoles } from "../entities/Employee";
-import { SoftwareArchitect } from "../entities/SoftwareArchitect";
-import { SoftwareEngineer } from "../entities/SoftwareEngineer";
+import { DatabaseEngineer } from "../shared/entities/DatabaseEngineer";
+import { EmployeeRoles } from "../shared/entities/Employee";
+import { SoftwareArchitect } from "../shared/entities/SoftwareArchitect";
+import { SoftwareEngineer } from "../shared/entities/SoftwareEngineer";
 
 class EmployeeFactory {
 	create(role: EmployeeRoles) {

@@ -1,5 +1,4 @@
-import { EmployeeRoles } from "../entities/Employee";
-import { SoftwareArchitect } from "../entities/SoftwareArchitect";
+import { EmployeeRoles } from "../shared/entities/Employee";
 import EmployeeFactory from "./EmployeeFactory";
 
 const softwareEngineer = EmployeeFactory.create(EmployeeRoles.SoftwareEngineer);
