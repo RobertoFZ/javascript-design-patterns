@@ -6,12 +6,18 @@ export enum EmployeeRoles {
 
 export class Employee {
 	private role: EmployeeRoles;
+	private name: string | null;
 
-	constructor(role: EmployeeRoles) {
+	constructor(role: EmployeeRoles, name: string | null = null) {
 		this.role = role;
+		this.name = name;
 	}
 
 	showRole() {
 		console.log(`I'm ${this.role} employee`);
+	}
+
+	getName() {
+		return this.name;
 	}
 }
